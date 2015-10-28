@@ -1,3 +1,13 @@
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+}
+
+
 #homePage{
   height:100vh;
   background: url("../img/backgrounds/seashoredark.jpg") no-repeat center center;
@@ -36,7 +46,7 @@
 
 
 #aboutPage {
-  background: url("../assets/images/backgrounds/blur-background.jpg") no-repeat center center;
+  background: url("../img/backgrounds/blur-background.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -112,7 +122,7 @@
 }
 
 #skillsPage{
-  background: url("../assets/images/backgrounds/hexagon-background.jpg") no-repeat center center;
+  background: url("../img/backgrounds/hexagon-background.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -231,10 +241,8 @@
 
 /********************************* CLASSES **********************************/
 
-html,body
-{
-    width: 100%;
-    overflow-x: hidden; 
+.navbar-header {
+  float: left;
 }
 
 .sectionHeader{
@@ -244,7 +252,14 @@ html,body
   color: #2c3e50;
 }
 
+.floatRight{
+  float:right;
+}
+
 .navbar{
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 20px;
   background:transparent;
   border:0px;
 }

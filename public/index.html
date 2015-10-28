@@ -1,0 +1,121 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <base href="/">
+    <title>John's Portfolio</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+  </head>
+  <body>
+  <div id="homePage">  
+  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="navbar-header">
+      <div ng-click="toggleMenu()" class="pull-right" ng-class="menuToggle" data-toggle="collapse" data-target="#js-navbar-collapse">
+        <span class="bars"></span>
+      </div>
+      <h3 id="myName"><strong>JOHN NGUYEN</strong></h3>
+    </div>
+
+    <div class="collapse navbar-collapse" id="js-navbar-collapse">
+      <ul id="navList" class="nav navbar-nav navbar-right">
+        <li><a scroll-to="homePage" duration="1000" href="#"><strong>HOME</strong></a></li>
+        <li><a scroll-to="aboutPage" duration="1000" href="#"><strong>ABOUT</strong></a></li>
+        <li><a scroll-to="skillsPage" duration="1000" href="#"><strong>RESUME</strong></a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="hero">
+    <ul>
+      <li>
+        <h2><strong>Software Engineering</strong></h2>
+      </li>
+      <li>
+        <h2><strong>Web Development</strong></h2>
+      </li>
+      <li>
+        <h2><strong>Web Design</strong></h2>
+      </li>
+    </ul>
+  </div>
+
+  <div id="projectButton">
+    <a class="ghost-button-full-color"><strong>PROJECTS</strong></a>
+  </div>
+  <div class="scrollDownButton bounce">
+    <i class= "fa fa-angle-down fa-3x"></i>
+  </div>
+</div>
+<div id="aboutPage">
+  <div class="container">
+    <h1 class="sectionHeader"><strong>ABOUT</strong></h1>
+    <div class="row">
+      <div class="col-sm-3">
+        <div id="portrait"> 
+        </div>
+      </div>
+      <div class="col-sm-9">
+        <p>
+          Hi, I'm John a full-stack developer from Garden Grove CA. I'm currently attending the University of California Irvine in pursuit of my B.S. in Computer Science. I typically prefer frontend development over backend due to my love for AngularJS and frontend javascript frameworks, but I can work as a backend developer just as well. 
+          </br>
+          </br>
+          Welcome to my personal site! The primary focus of this site is to portray my skills as a software developer to anyone who it may concern. Here you'll be able to find a list of my skills, projects I have worked on, and work experience. In other words, this site pretty much depicts my resume in an user-friendly format, oh, and if you'd like to see the document format of my resume, there's a link for that too. Thanks for visiting, and enjoy your stay!
+        </p>
+      </div>
+    </div>
+    <h1 class="sectionHeader"><strong>ME</strong></h1>
+    <div class="row">
+      <div ng-repeat="item in meArray" class="col-sm-4">
+        <div id="{{ item.id }}">
+          <div><h3>{{item.text}}</h3></div>
+          <img src="{{item.img}}" />
+        </div> 
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="skillsPage">
+  <div class="container">
+    <h2 class="sectionHeader"><strong>SKILLS</strong></h2>
+    <h3><strong>PROGRAMMING / MARKUP LANGUAGES</strong></h3>
+    <div class="row">
+      <div  id="{{item.id}}" class="col-sm-3">
+        <img src="{{item.img}}"/>
+        <div class="skillText"><strong><h4></h4><p>{{ item.skillLevel }}</p></strong></div>
+      </div>
+    </div>
+    <h3><strong>FRAMEWORKS</strong></h3>
+    <div class="row">
+      <div id="" class="col-sm-3">
+        <img src=""/>
+        <div ng-if="item.hovering" class="skillText"><strong><h4>{{ item.name }}</h4><p>{{ item.skillLevel }}</p></strong></div>
+      </div>
+    </div>
+    <h3><strong>SOFTWARE</strong></h3>
+    <div class="row">
+      <div class="col-sm-3">
+        <img src="{{item.img}}"/>
+        <div class="skillText"><strong><h4></h4><p></p></strong></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="projectsPage">
+  <div class="container">
+    <h1 class="sectionHeader"><strong>PROJECTS</strong></h1>
+  </div>
+</div>
+
+  </body>
+</html>

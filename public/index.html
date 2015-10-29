@@ -9,12 +9,14 @@
     <meta name="viewport" content="width=device-width">
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
     <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
 
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="js/jquery-scrollto.js"></script>
     <script src="js/portfolio.js"></script>
   </head>
   <body>
@@ -24,10 +26,10 @@
           <h3 id="myName"><strong>JOHN NGUYEN</strong></h3>
         </div>
         <div class="navbar-collapse" id="js-navbar-collapse">
-          <ul id="navList" class="nav navbar-nav navbar-right">
-            <li><a scroll-to="homePage" duration="1000" href="#"><strong>HOME</strong></a></li>
-            <li><a scroll-to="aboutPage" duration="1000" href="#"><strong>ABOUT</strong></a></li>
-            <li><a scroll-to="skillsPage" duration="1000" href="#"><strong>RESUME</strong></a></li>
+          <ul id="navList" class="navbar-nav navbar-right">
+            <li><a id="navHomeBtn" href="#"><strong>HOME</strong></a></li>
+            <li><a id="navAboutBtn" duration="1000" href="#"><strong>ABOUT</strong></a></li>
+            <li><a id="navResumeBtn" duration="1000" href="#"><strong>RESUME</strong></a></li>
           </ul>
         </div>
       </div>
@@ -49,40 +51,113 @@
       <div id="projectButton">
         <a class="ghost-button-full-color"><strong>PROJECTS</strong></a>
       </div>
-      <div class="scrollDownButton bounce">
+      <div id="scrollDownButton" class="bounce">
         <i class= "fa fa-angle-down fa-3x"></i>
       </div>
     </div>
     <div id="aboutPage">
       <div class="container">
         <h1 class="sectionHeader"><strong>ABOUT</strong></h1>
-        <div class="row">
-          <div class="col-sm-3">
-            <div id="portrait"> 
-            </div>
+        <div id="bio">
+          <div id="portrait"> 
           </div>
-          <div class="col-sm-9">
-            <p>
-              Hi, I'm John a full-stack developer from Garden Grove CA. I'm currently attending the University of California Irvine in pursuit of my B.S. in Computer Science. I typically prefer frontend development over backend due to my love for AngularJS and frontend javascript frameworks, but I can work as a backend developer just as well. 
-              </br>
-              </br>
-              Welcome to my personal site! The primary focus of this site is to portray my skills as a software developer to anyone who it may concern. Here you'll be able to find a list of my skills, projects I have worked on, and work experience. In other words, this site pretty much depicts my resume in an user-friendly format, oh, and if you'd like to see the document format of my resume, there's a link for that too. Thanks for visiting, and enjoy your stay!
-            </p>
-          </div>
+          <p>
+            Hi, I'm John a full-stack developer from Garden Grove CA. I'm currently attending the University of California Irvine in pursuit of my B.S. in Computer Science. I typically prefer frontend development over backend due to my love for AngularJS and frontend javascript frameworks, but I can work as a backend developer just as well. 
+            </br>
+            </br>
+            Welcome to my personal site! The primary focus of this site is to portray my skills as a software developer to anyone who it may concern. Here you'll be able to find a list of my skills, projects I have worked on, and work experience. In other words, this site pretty much depicts my resume in a user-friendly format, oh, and if you'd like to see the document format of my resume, there's a link for that too. Thanks for visiting, and enjoy your stay!
+          </p>
         </div>
         <h1 class="sectionHeader"><strong>ME</strong></h1>
         <div class="row">
-          <div class="col-sm-4">
+          <div class="aboutCols">
+            <div class="me" id="dumbbell">
+              <div><h3>LIFTING</h3></div>
+              <img src="img/me/orange-dumbbell.png"/>
+            </div>
           </div>
+          <div class="aboutCols">
+            <div class="me" id="coding">
+              <div><h3>CODING</h3></div>
+              <img src="img/me/coding.png"/>
+            </div>
+          </div>
+          <div class="aboutCols">
+            <div class="me" id="gaming">
+              <div><h3>GAMING</h3></div>
+              <img src="img/me/gaming.png"/>
+            </div>
         </div>
       </div>
     </div>
     <div id="skillsPage">
       <div class="container">
         <h2 class="sectionHeader"><strong>SKILLS</strong></h2>
-        <h3><strong>PROGRAMMING / MARKUP LANGUAGES</strong></h3>
+        <div id="programming">
+          <h3><strong>PROGRAMMING / MARKUP LANGUAGES</strong></h3>
+          <div class="skillCols" id="cplusplus">
+            <img src="img/resume/programming/cplusplus.png"/>
+          </div>
+          <div class="skillCols" id="python">
+            <img src="img/resume/programming/python.png"/>
+          </div>
+          <div class="skillCols" id="java">
+            <img src="img/resume/programming/java.png"/>
+          </div>
+          <div class="skillCols" id="php">
+            <img src="img/resume/programming/php.png"/>
+          </div>          
+          <div class="skillCols" id="html5">
+            <img src="img/resume/programming/html5.png"/>
+          </div>
+          <div class="skillCols" id="css3">
+            <img src="img/resume/programming/css3.png"/>
+          </div>
+          <div class="skillCols" id="javascript">
+            <img src="img/resume/programming/javascript.png"/>
+          </div>
+          <div style="margin-bottom:20px" class="skillCols" id="mysql">
+            <img src="img/resume/programming/mysql.png"/>
+          </div>  
+        </div>
         <h3><strong>FRAMEWORKS</strong></h3>
+        <div class="skillCols" id="angular">
+          <img src="img/resume/frameworks/angular.png"/>
+        </div>
+        <div class="skillCols" id="laravel">
+          <img src="img/resume/frameworks/laravel.png"/>
+        </div>
+        <div class="skillCols" id="node">
+          <img src="img/resume/frameworks/node-js.png"/>
+        </div>
+        <div style="margin-bottom:20px" class="skillCols" id="zend">
+          <img src="img/resume/frameworks/zend.png"/>
+        </div>  
         <h3><strong>SOFTWARE</strong></h3>
+        <div class="skillCols" id="eclipse">
+          <img src="img/resume/software/eclipse.png"/>
+        </div>
+        <div class="skillCols" id="pycharm">
+          <img src="img/resume/software/pycharm.png"/>
+        </div>
+        <div class="skillCols" id="visualstudio">
+          <img src="img/resume/software/visualstudio.png"/>
+        </div>
+        <div class="skillCols" id="mysqlworkbench">
+          <img src="img/resume/software/mysqlworkbench.png"/>
+        </div>          
+        <div class="skillCols" id="mongodb">
+          <img src="img/resume/software/mongodb.png"/>
+        </div>
+        <div class="skillCols" id="linux">
+          <img src="img/resume/software/linux.png"/>
+        </div>
+        <div class="skillCols" id="ubuntu">
+          <img src="img/resume/software/ubuntu.png"/>
+        </div>
+        <div style="margin-bottom:50px" class="skillCols" id="microsoft">
+          <img src="img/resume/software/microsoft-office.png"/>
+        </div>  
       </div>
     </div>
     <div id="projectsPage">

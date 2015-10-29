@@ -25,6 +25,10 @@ $(document).ready(function(){
 			duration: 1000
 		});
 	});
+
+	$('#nav-icon').click(function(){
+		$(this).toggleClass('open');
+	});
 });
 
 $(window).scroll(function(){
@@ -37,3 +41,5 @@ $(window).scroll(function(){
 		$(".navbar").removeClass("navBg");
 	}
 });
+
+

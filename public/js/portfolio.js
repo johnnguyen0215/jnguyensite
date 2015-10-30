@@ -28,18 +28,20 @@ $(document).ready(function(){
 
 	$('#nav-icon').click(function(){
 		$(this).toggleClass('open');
+		$('#navList').toggleClass('show');
 	});
-});
 
-$(window).scroll(function(){
-	var scroll = $(window).scrollTop();
+	$(window).scroll(function(event){
+		var scroll = $(window).scrollTop();
+		if (scroll >= 500){
+			$(".navbar").addClass("navBg");
+		}
+		else if (scroll < 500){
+			$(".navbar").removeClass("navBg");
+		}
+	});
 
-	if (scroll >= 500){
-		$(".navbar").addClass("navBg");
-	}
-	else if (scroll < 500){
-		$(".navbar").removeClass("navBg");
-	}
+
 });
 
 

@@ -7,6 +7,10 @@ body {
   margin: 0;
 }
 
+hr{
+  width:100%;
+}
+
 
 #homePage{
   height:100vh;
@@ -28,17 +32,16 @@ body {
 #hero{
   font-family: "Raleway";
   margin-top:150px;
-
   text-align:center;
   margin-right:30px;
-  vertical-align:center;*/
+  vertical-align:center;
 }
 
 #hero li{ 
   list-style: none;
 }
 
-#projectButton{
+#projectsButton{
   margin-top:250px;
   letter-spacing:5px;
   text-align:center;
@@ -74,7 +77,6 @@ body {
 
 
 #navList {
-  margin-top:15px;
   margin-right:20px;
   font-size: 15px;
   display:block;
@@ -219,6 +221,43 @@ body {
   background-color: #bdc3c7;
 }
 
+/********* Projects ***********/
+
+#ocw{
+  background-color:#5C97BF;
+}
+
+#ocw img{
+  padding:10px;
+  float:left;
+}
+
+#openchem{
+  background-color:#1E8BC3;
+}
+
+#openchem img{
+  padding:10px;
+  float:right;
+}
+
+#whiz{
+  background-color:#6C7A89;
+}
+#whiz img{
+  padding:10px;
+  float:left;
+}
+
+#filesystem{
+  background-color:#2c3e50;
+}
+
+#filesystem img{
+  padding:10px;
+  float:right;
+}
+
 /***** END RESUME SECTION *********/
 
 #projectsPage{
@@ -226,13 +265,17 @@ body {
   overflow:hidden;
 }
 
+#projectsPage .container{
+  margin-bottom: 50px;
+}
+
 
 #nav-icon{
   display:none;
-  width: 45px;
-  height: 45px;
+  width: 35px;
+  height: 35px;
   margin-top:20px;
-  margin-left:85%;
+  margin-left:90%;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
@@ -247,7 +290,7 @@ body {
 #nav-icon span{
   display: block;
   position: absolute;
-  height: 5px;
+  height: 4px;
   width: 100%;
   background: white;
   border-radius: 9px;
@@ -268,11 +311,11 @@ body {
 }
 
 #nav-icon span:nth-child(2),#nav-icon span:nth-child(3) {
-  top: 12px;
+  top: 9px;
 }
 
 #nav-icon span:nth-child(4) {
-  top: 25px;
+  top: 18px;
 }
 
 #nav-icon.open span:nth-child(1) {
@@ -304,8 +347,12 @@ body {
 /********************************* CLASSES **********************************/
 
 
-.pull-right{
+.floatRight{
   float:right;
+}
+
+.floatLeft{
+  float:left;
 }
 
 .me{
@@ -337,7 +384,6 @@ body {
 }
 
 .aboutCols{
-  float:left;
   width:33%;
   font-family: "Raleway";
   color: white;
@@ -345,11 +391,22 @@ body {
 }
 
 .skillCols{
-  float:left;
   width: 25%;
   text-align:center;
   padding-top:10px;
   padding-bottom:10px;
+}
+
+.projectCols{
+  width:50%;
+  text-align:center;
+}
+
+.projectTitle{
+  color:white;
+  font-family: "Lato";
+  font-size:20px;
+
 }
 
 
@@ -537,11 +594,14 @@ body {
   #navList{
     float:right;
   }
+  #navList hr{
+    display:none;
+  }
 }
 
-@media only screen and (max-height: 700px){
-  #scrollDownButton{
-    visibility:hidden;
+@media only screen and (max-width: 1000px){
+  .projectCols{
+    width:100%;
   }
 }
 
@@ -562,7 +622,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 384px){
+@media only screen and (max-width: 480px){
   .skillCols{
     width: 100%;
   }
@@ -570,5 +630,45 @@ body {
   #skillsPage h3{
     text-align:center;
   }
+
+  #myName{
+    font-size: 15px;
+  }
+
+  #nav-icon{
+    margin-left: 85%;
+  }
+
+  #projectsButton{
+    font-size: 12px;
+  }
+
+  .ghost-button-full-color{
+    padding:6px;
+  }
+
+  .sectionHeader{
+    font-size:60px;
+  }
+  #hero h2{
+    font-size:20px;
+  }
+  .navbar{
+    background-color:#22313F;
+  }
+
+}
+
+@media only screen and (max-height: 700px){
+  #projectsButton{
+    margin-top:90px;
+  }
+}
+
+@media only screen and (max-height: 500px){
+  #scrollDownButton{
+    display:none;
+  }
+
 }
 

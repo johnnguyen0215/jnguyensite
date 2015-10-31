@@ -16,8 +16,10 @@
     <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
 
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.0/jquery.scrollTo.min.js"></script>
     <script src="js/jquery-scrollto.js"></script>
     <script src="js/portfolio.js"></script>
+
   </head>
   <body>
     <div id="homePage">  
@@ -31,11 +33,12 @@
           <span></span>
           <span></span>
         </div>
-        <div class="navList">
-          <ul id="navList">
+        <div id="navList">
+          <hr>
+          <ul>
             <li><a id="navHomeBtn" href="#"><strong>HOME</strong></a></li>
-            <li><a id="navAboutBtn" duration="1000" href="#"><strong>ABOUT</strong></a></li>
-            <li><a id="navResumeBtn" duration="1000" href="#"><strong>RESUME</strong></a></li>
+            <li><a id="navAboutBtn" href="#"><strong>ABOUT</strong></a></li>
+            <li><a id="navResumeBtn" href="#"><strong>RESUME</strong></a></li>
           </ul>
         </div>
       </div>
@@ -54,7 +57,7 @@
         </ul>
       </div>
 
-      <div id="projectButton">
+      <div id="projectsButton">
         <a class="ghost-button-full-color"><strong>PROJECTS</strong></a>
       </div>
       <div id="scrollDownButton" class="bounce">
@@ -75,19 +78,19 @@
           </p>
         </div>
         <h1 class="sectionHeader"><strong>ME</strong></h1>
-        <div class="aboutCols">
+        <div class="aboutCols floatLeft">
           <div class="me" id="dumbbell">
             <div><h3>LIFTING</h3></div>
             <img src="img/me/orange-dumbbell.png"/>
           </div>
         </div>
-        <div class="aboutCols">
+        <div class="aboutCols floatLeft">
           <div class="me" id="coding">
             <div><h3>CODING</h3></div>
             <img src="img/me/coding.png"/>
           </div>
         </div>
-        <div style="margin-bottom:50px" class="aboutCols">
+        <div style="margin-bottom:50px" class="aboutCols floatLeft">
           <div class="me" id="gaming">
             <div><h3>GAMING</h3></div>
             <img src="img/me/gaming.png"/>
@@ -100,67 +103,67 @@
         <h2 class="sectionHeader"><strong>SKILLS</strong></h2>
         <div id="programming">
           <h3><strong>PROGRAMMING / MARKUP LANGUAGES</strong></h3>
-          <div class="skillCols" id="cplusplus">
+          <div class="skillCols floatLeft" id="cplusplus">
             <img src="img/resume/programming/cplusplus.png"/>
           </div>
-          <div class="skillCols" id="python">
+          <div class="skillCols floatLeft" id="python">
             <img src="img/resume/programming/python.png"/>
           </div>
-          <div class="skillCols" id="java">
+          <div class="skillCols floatLeft" id="java">
             <img src="img/resume/programming/java.png"/>
           </div>
-          <div class="skillCols" id="php">
+          <div class="skillCols floatLeft" id="php">
             <img src="img/resume/programming/php.png"/>
           </div>          
-          <div class="skillCols" id="html5">
+          <div class="skillCols floatLeft" id="html5">
             <img src="img/resume/programming/html5.png"/>
           </div>
-          <div class="skillCols" id="css3">
+          <div class="skillCols floatLeft" id="css3">
             <img src="img/resume/programming/css3.png"/>
           </div>
-          <div class="skillCols" id="javascript">
+          <div class="skillCols floatLeft" id="javascript">
             <img src="img/resume/programming/javascript.png"/>
           </div>
-          <div style="margin-bottom:20px" class="skillCols" id="mysql">
+          <div style="margin-bottom:20px" class="skillCols floatLeft" id="mysql">
             <img src="img/resume/programming/mysql.png"/>
           </div>  
         </div>
         <h3><strong>FRAMEWORKS</strong></h3>
-        <div class="skillCols" id="angular">
+        <div class="skillCols floatLeft" id="angular">
           <img src="img/resume/frameworks/angular.png"/>
         </div>
-        <div class="skillCols" id="laravel">
+        <div class="skillCols floatLeft" id="laravel">
           <img src="img/resume/frameworks/laravel.png"/>
         </div>
-        <div class="skillCols" id="node">
+        <div class="skillCols floatLeft" id="node">
           <img src="img/resume/frameworks/node-js.png"/>
         </div>
-        <div style="margin-bottom:20px" class="skillCols" id="zend">
+        <div style="margin-bottom:20px" class="skillCols floatLeft" id="zend">
           <img src="img/resume/frameworks/zend.png"/>
         </div>  
         <h3><strong>SOFTWARE</strong></h3>
-        <div class="skillCols" id="eclipse">
+        <div class="skillCols floatLeft" id="eclipse">
           <img src="img/resume/software/eclipse.png"/>
         </div>
-        <div class="skillCols" id="pycharm">
+        <div class="skillCols floatLeft" id="pycharm">
           <img src="img/resume/software/pycharm.png"/>
         </div>
-        <div class="skillCols" id="visualstudio">
+        <div class="skillCols floatLeft" id="visualstudio">
           <img src="img/resume/software/visualstudio.png"/>
         </div>
-        <div class="skillCols" id="mysqlworkbench">
+        <div class="skillCols floatLeft" id="mysqlworkbench">
           <img src="img/resume/software/mysqlworkbench.png"/>
         </div>          
-        <div class="skillCols" id="mongodb">
+        <div class="skillCols floatLeft" id="mongodb">
           <img src="img/resume/software/mongodb.png"/>
         </div>
-        <div class="skillCols" id="linux">
+        <div class="skillCols floatLeft" id="linux">
           <img src="img/resume/software/linux.png"/>
         </div>
-        <div class="skillCols" id="ubuntu">
+        <div class="skillCols floatLeft" id="ubuntu">
           <img src="img/resume/software/ubuntu.png"/>
         </div>
-        <div style="margin-bottom:50px" class="skillCols" id="microsoft">
+        <div style="margin-bottom:50px" class="skillCols floatLeft" id="microsoft">
           <img src="img/resume/software/microsoft-office.png"/>
         </div>  
       </div>
@@ -168,6 +171,22 @@
     <div id="projectsPage">
       <div class="container">
         <h1 class="sectionHeader"><strong>PROJECTS</strong></h1>
+        <div class="projectCols floatLeft" id="ocw">
+          <img class="floatLeft" src="img/resume/projects/ocw.jpg">
+          <div class="projectTitle floatRight">UCI OpenCourseWare</div>
+        </div>
+        <div class="projectCols floatLeft" id="openchem">
+          <img class="floatRight" src="img/resume/projects/openchem.jpg">
+          <div class="projectTitle floatLeft">UCI OpenChem</div>
+        </div>
+        <div class="projectCols floatLeft" id="whiz">
+          <img class="floatLeft"src="img/resume/projects/whiz.jpg">
+          <div class="projectTitle floatRight">BooksApp</div>
+        </div>
+        <div class="projectCols floatLeft" id="filesystem">
+          <img class="floatRight"src="img/resume/projects/filesystem.jpg">
+          <div class="projectTitle floatLeft">C++ FileSystem</div>
+        </div>
       </div>
     </div>
 

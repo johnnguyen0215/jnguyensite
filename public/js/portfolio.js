@@ -4,26 +4,31 @@ $(document).ready(function(){
 		$("#aboutPage").ScrollTo({
 			duration: 1000
 		});
+		return false;
 	});
-	$("#projectButton").click(function(){
+	$("#projectsButton").click(function(){
 		$("#projectsPage").ScrollTo({
 			duration: 1000
 		});
+		return false;
 	});
 	$("#navHomeBtn").click(function(){
 		$("#homePage").ScrollTo({
 			duration: 1000
 		});
+		return false;
 	});
 	$("#navAboutBtn").click(function(){
 		$("#aboutPage").ScrollTo({
 			duration: 1000
 		});
+		return false;
 	});
 	$("#navResumeBtn").click(function(){
 		$("#skillsPage").ScrollTo({
 			duration: 1000
 		});
+		return false;
 	});
 
 	$('#nav-icon').click(function(){

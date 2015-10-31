@@ -414,7 +414,6 @@ hr{
   font-family: "Lato";
   font-size:20px;
   text-align:center;
-  margin-left:50px;
 }
 
 
@@ -589,21 +588,25 @@ hr{
   display:block;
 }
 
-@media (min-width: 768px) {
-  #navList{
-    float:left;
-  }
+@media only screen and (min-width: 768px) {
   #navList li{
     float:left;
   }
-}
-
-@media (min-width: 768px) {
   #navList{
     float:right;
   }
   #navList hr{
     display:none;
+  }
+  #openchem .projectTitle{
+    margin-left: 30px;
+  }
+  #whiz .projectTitle{
+    margin-left: 40px;
+  }
+
+  #filesystem .projectTitle{
+    margin-left: 30px;
   }
 }
 
@@ -628,6 +631,20 @@ hr{
   #nav-icon{
     display:block;
   }
+  #ocw .projectTitle{
+    margin-left: 5;
+  }
+  #openchem .projectTitle{
+    margin-left: 30px;
+  }
+  #whiz .projectTitle{
+    margin-left: 40px;
+  }
+
+  #filesystem .projectTitle{
+    margin-left: 30px;
+  }
+
 }
 
 @media only screen and (max-width: 480px){
@@ -665,6 +682,24 @@ hr{
     background-color:#22313F;
   }
 
+}
+
+@media only screen and (min-width: 1200px){
+  #ocw .projectTitle{
+    margin-left: 45px;
+  }
+
+  #openchem .projectTitle{
+    margin-left: 70px;
+  }
+
+  #whiz .projectTitle{
+    margin-left: 100px;
+  }
+
+  #filesystem .projectTitle{
+    margin-left: 80px;
+  }
 }
 
 @media only screen and (max-height: 700px){

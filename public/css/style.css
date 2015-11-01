@@ -390,6 +390,10 @@ hr{
   padding-bottom:10px;
 }
 
+.skillCols:hover .overlay{
+  opacity: 1;
+}
+
 .projectCols{
   position:relative;
   width:50%;
@@ -400,6 +404,12 @@ hr{
   display:block;
   margin:auto;
 }
+
+.projectCols:hover .overlay{
+  opacity: 1;
+  cursor: pointer;
+}
+
 
 
 .projectTitle{
@@ -491,6 +501,7 @@ hr{
   right:0;
   font-family:'Lato', sans-serif;
   color:#2c3e50;
+  display:none;
   animation:zoomIn 0.5s both ease-in;
   -webkit-animation:zoomIn 0.5s both ease-in; 
   -moz-animation:zoomIn 0.5s both ease-in; 
@@ -570,33 +581,13 @@ hr{
   bottom:0;
   right:0;
   left:0;
-  background:rgba(78,205,196,.75);
+  background:rgba(37,116,169,.9);
   text-align:center;
   padding:45px 0 66px 0;
   opacity:0;
   -webkit-transition: opacity .25s ease;
   -moz-transition: opacity .25s ease;
 }
-
-#ocw:hover .overlay {
-  opacity:1;
-}
-
-#ocw:hover{
-  opacity:0.5;
-}
-
-#openchem:hover .overlay{
-  opacity:1;
-}
-
-#openchem:hover{
-  opacity:0.5;
-}
-
-
-
-
 
 
 /************************ TRANSITIONS/ TRANSLATIONS ************************/ 

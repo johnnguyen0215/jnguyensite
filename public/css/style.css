@@ -372,23 +372,10 @@ hr{
   margin-right: auto;
   margin-left: auto;
 }
-@media (min-width: 768px) {
-  .container {
-    width: 750px;
-  }
-}
-@media (min-width: 992px) {
-  .container {
-    width: 970px;
-  }
-}
-@media (min-width: 1200px) {
-  .container {
-    width: 1170px;
-  }
-}
+
 
 .aboutCols{
+  position:relative;
   width:33%;
   font-family: "Raleway";
   color: white;
@@ -396,6 +383,7 @@ hr{
 }
 
 .skillCols{
+  position:relative;
   width: 25%;
   text-align:center;
   padding-top:10px;
@@ -403,9 +391,16 @@ hr{
 }
 
 .projectCols{
+  position:relative;
   width:50%;
   text-align:center;
 }
+
+.projectCols img{
+  display:block;
+  margin:auto;
+}
+
 
 .projectTitle{
   line-height:277px;
@@ -529,6 +524,79 @@ hr{
               border-color 0.2s ease-in;
 }
 
+.navbar {
+  position: fixed;
+  min-height: 50px;
+  margin-bottom: 20px;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+.navbar li{
+  position: relative;
+  list-style: none;
+  display:block;
+}
+
+.navbar li a{
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  text-decoration:none;
+}
+
+.skillText{
+  position:absolute;
+  top:25px;
+  left: 0;
+  right:0;
+  font-family:'Lato', sans-serif;
+  color:#2c3e50;
+  animation:zoomIn 0.5s both ease-in;
+  -webkit-animation:zoomIn 0.5s both ease-in; 
+  -moz-animation:zoomIn 0.5s both ease-in; 
+  animation:zoomIn 0.5s both ease-in;
+}
+
+.show{
+  display:block;
+}
+
+.overlay {  
+  color:white;
+  position:absolute;
+  top:0;
+  bottom:0;
+  right:0;
+  left:0;
+  background:rgba(78,205,196,.75);
+  text-align:center;
+  padding:45px 0 66px 0;
+  opacity:0;
+  -webkit-transition: opacity .25s ease;
+  -moz-transition: opacity .25s ease;
+}
+
+#ocw:hover .overlay {
+  opacity:1;
+}
+
+#ocw:hover{
+  opacity:0.5;
+}
+
+#openchem:hover .overlay{
+  opacity:1;
+}
+
+#openchem:hover{
+  opacity:0.5;
+}
+
+
+
+
 
 
 /************************ TRANSITIONS/ TRANSLATIONS ************************/ 
@@ -561,31 +629,20 @@ hr{
 
 /* Responsive: Portrait tablets and up */
 
-
-.navbar {
-  position: fixed;
-  min-height: 50px;
-  margin-bottom: 20px;
-  right: 0;
-  left: 0;
-  z-index: 1030;
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
 }
-
-.navbar li{
-  position: relative;
-  list-style: none;
-  display:block;
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
 }
-
-.navbar li a{
-  position: relative;
-  display: block;
-  padding: 10px 15px;
-  text-decoration:none;
-}
-
-.show{
-  display:block;
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -631,6 +688,7 @@ hr{
   #nav-icon{
     display:block;
   }
+  /*
   #ocw .projectTitle{
     margin-left: 5;
   }
@@ -644,7 +702,7 @@ hr{
   #filesystem .projectTitle{
     margin-left: 30px;
   }
-
+  */
 }
 
 @media only screen and (max-width: 480px){
@@ -682,9 +740,15 @@ hr{
     background-color:#22313F;
   }
 
+  .projectTitle{
+    clear:both;
+    line-height: 100px;
+  }
 }
 
+
 @media only screen and (min-width: 1200px){
+  /*
   #ocw .projectTitle{
     margin-left: 45px;
   }
@@ -699,7 +763,7 @@ hr{
 
   #filesystem .projectTitle{
     margin-left: 80px;
-  }
+  }*/
 }
 
 @media only screen and (max-height: 700px){

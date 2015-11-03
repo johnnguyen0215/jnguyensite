@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animate.css">
     <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+
     <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
 
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
@@ -39,6 +39,7 @@
             <li><a id="navHomeBtn" href="#"><strong>HOME</strong></a></li>
             <li><a id="navAboutBtn" href="#"><strong>ABOUT</strong></a></li>
             <li><a id="navResumeBtn" href="#"><strong>RESUME</strong></a></li>
+            <li><a id="navContactBtn" href="#"><strong>CONTACT</strong></a></li>
           </ul>
         </div>
       </div>
@@ -90,7 +91,7 @@
             <img src="img/me/coding.png"/>
           </div>
         </div>
-        <div style="margin-bottom:50px" class="aboutCols floatLeft">
+        <div class="aboutCols floatLeft">
           <div class="me" id="gaming">
             <div><h3>GAMING</h3></div>
             <img src="img/me/gaming.png"/>
@@ -101,8 +102,9 @@
     <div id="skillsPage">
       <div class="container">
         <h2 class="sectionHeader"><strong>SKILLS</strong></h2>
-        <div id="programming">
-          <h3><strong>PROGRAMMING / MARKUP LANGUAGES</strong></h3>
+        <a target="_blank" href="https://drive.google.com/file/d/0B6T529OGINGFR2FWQ1Rjb212Vnc/view?usp=sharing"><button id="googleDrive"><img src="img/social/google_drive.png"/>Google Drive Resume</button></a>
+        <h3><strong>PROGRAMMING / MARKUP LANGUAGES</strong></h3>
+        <div class="row">
           <div class="skillCols floatLeft" id="cplusplus">
             <img src="img/resume/programming/cplusplus.png"/>
             <div class="overlay">
@@ -125,168 +127,208 @@
           </div>
           <div class="skillCols floatLeft" id="java">
             <img src="img/resume/programming/java.png"/>
-            <div class="skillText">
-              <strong>
-                <h4>JAVA</h4>
-                <p>Proficient</p>
-              </strong>
+            <div class="overlay">
+              <div class="skillText">
+                <strong>
+                  <h4>JAVA</h4>
+                  <p>Proficient</p>
+                </strong>
+              </div>
             </div>
           </div>
           <div class="skillCols floatLeft" id="php">
             <img src="img/resume/programming/php.png"/>
-            <div class="skillText">
-              <strong>
-                <h4>PHP</h4>
-                <p>Proficient</p>
-              </strong>
+            <div class="overlay">
+              <div class="skillText">
+                <strong>
+                  <h4>PHP</h4>
+                  <p>Proficient</p>
+                </strong>
+              </div>
             </div>
-          </div>          
+          </div>   
+        </div>
+        <div class="row">       
           <div class="skillCols floatLeft" id="html5">
             <img src="img/resume/programming/html5.png"/>
-            <div class="skillText">
-              <strong>
-                <h4>HTML5</h4>
-                <p>Advanced</p>
-              </strong>
+            <div class="overlay">
+              <div class="skillText">
+                <strong>
+                  <h4>HTML5</h4>
+                  <p>Advanced</p>
+                </strong>
+              </div>
             </div>
           </div>
           <div class="skillCols floatLeft" id="css3">
             <img src="img/resume/programming/css3.png"/>
-            <div class="skillText">
-              <strong>
-                <h4>CSS3</h4>
-                <p>Proficient</p>
-              </strong>
+            <div class="overlay">
+              <div class="skillText">
+                <strong>
+                  <h4>CSS3</h4>
+                  <p>Proficient</p>
+                </strong>
+              </div>
             </div>
           </div>
           <div class="skillCols floatLeft" id="javascript">
             <img src="img/resume/programming/javascript.png"/>
-            <div class="skillText">
-              <strong>
-                <h4>JAVASCRIPT</h4>
-                <p>Proficient</p>
-              </strong>
+            <div class="overlay">
+              <div class="skillText">
+                <strong>
+                  <h4>JAVASCRIPT</h4>
+                  <p>Proficient</p>
+                </strong>
+              </div>
             </div>
           </div>
-          <div style="margin-bottom:20px" class="skillCols floatLeft" id="mysql">
+          <div class="skillCols floatLeft" id="mysql">
             <img src="img/resume/programming/mysql.png"/>
-            <div class="skillText">
-              <strong>
-                <h4>SQL</h4>
-                <p>Proficient</p>
-              </strong>
+            <div class="overlay">
+              <div class="skillText">
+                <strong>
+                  <h4>SQL</h4>
+                  <p>Proficient</p>
+                </strong>
+              </div>
             </div>
           </div>  
         </div>
         <h3><strong>FRAMEWORKS</strong></h3>
-        <div class="skillCols floatLeft" id="angular">
-          <img src="img/resume/frameworks/angular.png"/>
-          <div class="skillText">
-              <strong>
-                <h4>ANGULARJS</h4>
-                <p>Proficient</p>
-              </strong>
+        <div class="row">
+          <div class="skillCols floatLeft" id="angular">
+            <img src="img/resume/frameworks/angular.png"/>
+            <div class="overlay">
+              <div class="skillText">
+                <strong>
+                  <h4>ANGULARJS</h4>
+                  <p>Proficient</p>
+                </strong>
+              </div>
             </div>
+          </div>
+          <div class="skillCols floatLeft" id="laravel">
+            <img src="img/resume/frameworks/laravel.png"/>
+            <div class="overlay">
+              <div class="skillText">
+                <strong>
+                  <h4>LARAVEL5</h4>
+                  <p>Proficient</p>
+                </strong>
+              </div>
+            </div>
+          </div>
+          <div class="skillCols floatLeft" id="node">
+            <img src="img/resume/frameworks/node-js.png"/>
+            <div class="overlay">
+              <div class="skillText">
+                <strong>
+                  <h4>NODEJS</h4>
+                  <p>Rudimentary</p>
+                </strong>
+              </div>
+            </div>
+          </div>
+          <div class="skillCols floatLeft" id="zend">
+            <img src="img/resume/frameworks/zend.png"/>
+            <div class="overlay">
+              <div class="skillText">
+                <strong>
+                  <h4>ZEND</h4>
+                  <p>Rudimentary</p>
+                </strong>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="skillCols floatLeft" id="laravel">
-          <img src="img/resume/frameworks/laravel.png"/>
-          <div class="skillText">
-              <strong>
-                <h4>LARAVEL5</h4>
-                <p>Proficient</p>
-              </strong>
-            </div>
-        </div>
-        <div class="skillCols floatLeft" id="node">
-          <img src="img/resume/frameworks/node-js.png"/>
-          <div class="skillText">
-              <strong>
-                <h4>NODEJS</h4>
-                <p>Rudimentary</p>
-              </strong>
-            </div>
-        </div>
-        <div style="margin-bottom:20px" class="skillCols floatLeft" id="zend">
-          <img src="img/resume/frameworks/zend.png"/>
-          <div class="skillText">
-              <strong>
-                <h4>ZEND</h4>
-                <p>Rudimentary</p>
-              </strong>
-            </div>
-        </div>  
         <h3><strong>SOFTWARE</strong></h3>
         <div class="skillCols floatLeft" id="eclipse">
           <img src="img/resume/software/eclipse.png"/>
-          <div class="skillText">
+          <div class="overlay">
+            <div class="skillText">
               <strong>
                 <h4>ECLIPSE</h4>
                 <p>Advanced</p>
               </strong>
             </div>
+          </div>
         </div>
         <div class="skillCols floatLeft" id="pycharm">
           <img src="img/resume/software/pycharm.png"/>
-          <div class="skillText">
+          <div class="overlay">
+            <div class="skillText">
               <strong>
                 <h4>PYTHON</h4>
                 <p>Proficient</p>
               </strong>
             </div>
+          </div>
         </div>
         <div class="skillCols floatLeft" id="visualstudio">
           <img src="img/resume/software/visualstudio.png"/>
-          <div class="skillText">
+          <div class="overlay">
+            <div class="skillText">
               <strong>
                 <h4>VISUAL STUDIO</h4>
                 <p>Proficient</p>
               </strong>
             </div>
+          </div>
         </div>
         <div class="skillCols floatLeft" id="mysqlworkbench">
           <img src="img/resume/software/mysqlworkbench.png"/>
-          <div class="skillText">
+          <div class="overlay">
+            <div class="skillText">
               <strong>
                 <h4>MYSQL WORKBENCH</h4>
                 <p>Proficient</p>
               </strong>
             </div>
+          </div>
         </div>          
         <div class="skillCols floatLeft" id="mongodb">
           <img src="img/resume/software/mongodb.png"/>
-          <div class="skillText">
+          <div class="overlay">
+            <div class="skillText">
               <strong>
                 <h4>MONGODB</h4>
                 <p>Rudimentary</p>
               </strong>
             </div>
+          </div>
         </div>
         <div class="skillCols floatLeft" id="linux">
           <img src="img/resume/software/linux.png"/>
-          <div class="skillText">
+          <div class="overlay">
+            <div class="skillText">
               <strong>
                 <h4>LINUX</h4>
                 <p>Proficient</p>
               </strong>
             </div>
+          </div>
         </div>
         <div class="skillCols floatLeft" id="ubuntu">
           <img src="img/resume/software/ubuntu.png"/>
-          <div class="skillText">
+          <div class="overlay">
+            <div class="skillText">
               <strong>
                 <h4>UBUNTU</h4>
                 <p>Proficient</p>
               </strong>
             </div>
+          </div>
         </div>
-        <div style="margin-bottom:50px" class="skillCols floatLeft" id="microsoft">
+        <div class="skillCols floatLeft" id="microsoft">
           <img src="img/resume/software/microsoft-office.png"/>
-          <div class="skillText">
+          <div class="overlay">
+            <div class="skillText">
               <strong>
                 <h4>MICROSOFT OFFICE</h4>
                 <p>Advanced</p>
               </strong>
             </div>
+          </div>
         </div>  
       </div>
     </div>
@@ -314,13 +356,13 @@
         <div class="projectCols floatLeft" id="whiz">
           <div class="overlay">
             <p>
-              BooksApp is a startup that I have been working on with one of my friends who graduated from UCI with a degree in business/econ. The application is meant to serve as a central hub for students to buy, sell, and trade their used books. This app will cater to a variety of schools and its core purpose is to allow students to buy/sell/trade their books right on campus, in person. It will facilitate a system that allows the students to easily set up a meeting place and time in order to quickly and efficiently exchanging books. This application utilizes the MEAN stack.
+              BooksApp is a startup that I have been working on with one of my friends who graduated from UCI with a degree in business/econ. The application is meant to serve as a central hub for students to buy, sell, and trade their used books. This app will cater to a variety of schools and its core purpose is to allow students to buy/sell/trade their books right on campus, in person. It will facilitate a system that allows the students to easily set up a meeting place and time in order to quickly and efficiently buy/sell/trade books. This application utilizes the MEAN stack.
             </p>
           </div>
           <img src="img/resume/projects/whiz.jpg">
           <div class="projectTitle">BooksApp</div>
         </div>
-        <div style="margin-bottom:100px" class="projectCols floatLeft" id="filesystem">
+        <div class="projectCols floatLeft" id="filesystem">
           <div class="overlay">
             <p>
               This C++ filesystem is a program that allows you to do read/write operations through the command line. It is a direct portrayal of my core programming skills. The filesystem allows you to create files, delete files, and also the ability to leap to a certain part of the text file and begin reading/writing from that position. This was probably one of the more complex projects I've ever had through coursework and thought it would be a good sample for expressing my coding abilities.
@@ -329,6 +371,16 @@
           <img src="img/resume/projects/filesystem.jpg">
           <div class="projectTitle">C++ FileSystem</div>
         </div>
+      </div>
+    </div>
+    <div id="contactPage">
+      <div class="container">
+        <h1 class="sectionHeader">CONTACT</h1>
+        <p><strong>Want to get in touch?</strong></p>
+        <p><strong>Shoot me an e-mail:&nbsp;<a href="mailto:jenguyen@uci.edu">jenguyen@uci.edu</a></strong></p>
+        <a class="darken" target="_blank" href="https://www.facebook.com/johnnguyen0215"><img src="img/social/Facebook.png"/></a>
+        <a class="darken" target="_blank" href="https://www.linkedin.com/profile/preview?locale=en_US&trk=prof-0-sb-preview-primary-button"><img src="img/social/Linkedin.png"/></a>
+        <a class="darken" target="_blank" href="https://github.com/johnnguyen0215"><img src="img/social/Github.png"/></a>
       </div>
     </div>
   </body>

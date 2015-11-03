@@ -30,6 +30,11 @@ $(document).ready(function(){
 		});
 		return false;
 	});
+	$("#navContactBtn").click(function(){
+		$("#contactPage").ScrollTo({
+			duration: 1000
+		});
+	});
 
 	$('#nav-icon').click(function(){
 		$(this).toggleClass('open');

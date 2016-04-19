@@ -11,6 +11,125 @@ hr{
   width:100%;
 }
 
+nav{
+  color: #fff;
+}
+
+#commentsArea{
+  width:250px;
+  height:150px;
+  max-width:250px;
+  max-height:150px;
+  margin-bottom:20px;
+}
+
+#userInterviewsImg{
+  background: url("../img/findings/user-interviews.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin-right: 40px;
+  width: 200px;
+  height:200px;
+}
+
+#competitorAnalysisImg{
+  background: url("../img/findings/competitor-analysis.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin-right: 40px;
+  width: 200px;
+  height:200px;
+}
+
+#featureValueImg{
+  background: url("../img/findings/feature-value-matrix.JPG");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin-right: 40px;
+  width: 200px;
+  height:150px;
+}
+
+#featurePrioritizationImg{
+  background: url("../img/findings/feature-prioritization.JPG");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin-right: 40px;
+  width: 200px;
+  height:150px;
+}
+
+#cognitiveWalkthroughImg{
+  background: url("../img/findings/cognitive-walkthrough.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin-right: 40px;
+  width: 200px;
+  height:200px; 
+}
+
+#userStoriesImg{
+  background: url("../img/findings/user-stories.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin-right: 40px;
+  width: 200px;
+  height:200px; 
+}
+
+#userTestImg{
+  background: url("../img/findings/user-testing.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin-right: 40px;
+  width: 200px;
+  height:200px; 
+}
+
+#findingsPage{
+  overflow:hidden;
+  clear:both;
+}
+
+#findingsPage p{
+  font-family:"Lato";
+  font-size:15px;
+  font-weight:bold;
+}
+
+#findingsPage hr:nth-of-type(3){
+  clear:both;
+  margin-top: 100px;
+}
+
+#findingsPage h3{
+  clear:both;
+}
+
+#findingsPage a{
+  color:#3498db;
+  font-family:"Lato";
+  font-weight:bold;
+}
+
+#findingsPage a:hover{
+  color:#1abc9c;
+}
+
 #homePage{
   height:100vh;
   background: url("../img/backgrounds/seashoredark.jpg") no-repeat center center;
@@ -40,11 +159,22 @@ hr{
   list-style: none;
 }
 
+
 #projectsButton{
   margin-top:250px;
   letter-spacing:5px;
   text-align:center;
   font-size:15px;
+}
+
+
+#scrollDownText{
+  bottom:110px;
+  left:50%;
+  margin-left:-55px;
+  position: absolute;
+  text-align:center;
+  font-family:"Lato", sans-serif;
 }
 
 #scrollDownButton{
@@ -58,6 +188,28 @@ hr{
   -moz-animation: bounce 2s infinite;
   -o-animation: bounce 2s infinite;
 
+}
+
+#scrollUpButton{
+  display:none;
+  color:white;
+  position:fixed;
+  bottom:200px;
+  right:10px;
+  width:40px;
+  height:45px;
+  background-color:#34495e;
+  opacity: 0.3;
+  text-align:center;
+  transition: all .2s ease-in-out;
+  z-index:1000;
+
+}
+
+#scrollUpButton:hover{
+  cursor:pointer;
+  opacity: 0.8;
+  transform: scale(1.2);
 }
 
 #aboutPage {
@@ -93,15 +245,14 @@ hr{
 #navList.show{
   display: block;
   animation: fadeInDown 1s;
-  -webkit-animation: fadeIn 1s;
-  -moz-animation: fadeIn 1s;
-  -o-animation: fadeIn 1s;
+  -webkit-animation: fadeInDown 1s;
+  -moz-animation: fadeInDown 1s;
+  -o-animation: fadeInDown 1s;
 }
 
 
 #navList a{
-  margin-right:10px;
-    font-family: "Lato";
+  font-family: "Lato";
   color: #fff;
 }
 
@@ -260,6 +411,7 @@ hr{
 #whiz{
   background-color:#6C7A89;
 }
+
 #whiz img{
   padding:10px;
   float:left;
@@ -283,6 +435,8 @@ hr{
   overflow:hidden;
 }
 
+
+
 #contactPage{
   background: url("../img/backgrounds/contact-dark.jpg") no-repeat center center;
   -webkit-background-size: cover;
@@ -303,9 +457,14 @@ hr{
   font-size: 20px;
 }
 
-#contactPage p:nth-of-type(2){
-  margin-bottom: 100px;
+#contactPage form{
+  margin-bottom:50px;
 }
+
+#contactPage p:nth-of-type(2){
+  margin-bottom: 50px;
+}
+
 
 #contactPage a{
   text-decoration:none;
@@ -450,6 +609,10 @@ hr{
 
 /********************************* CLASSES **********************************/
 
+.findingsSection{
+  clear:both;
+  margin-bottom: 90px;
+}
 
 .floatRight{
   float:right;
@@ -491,7 +654,6 @@ hr{
 
 .skillCols:hover .overlay{
   opacity: 1;
-  cursor: pointer;
   background:rgba(44,62,80,.9);
   -webkit-transition: opacity 0.4s ease;
   -moz-transition: opacity 0.4s ease;
@@ -506,12 +668,12 @@ hr{
 .projectCols{
   position:relative;
   width:50%;
+  height:auto;
   text-align:center;
 }
 
 .projectCols:hover .overlay{
   opacity: 1;
-  cursor: pointer;
 }
 
 .projectCols p{
@@ -614,11 +776,12 @@ hr{
   cursor: pointer;
 }
 
+
 .ghost-button-full-color {
   font-family: 'Lato', sans-serif;
   display: inline-block;
-  width: 160px;
-  padding: 8px;
+  width: 50px;
+  padding: 5px;
   color: #fff;
   background-color: transparent;
   border: 2px solid #fff;
@@ -669,10 +832,10 @@ hr{
   right:0;
   font-family:'Lato', sans-serif;
   display:none;
-  animation:fadeInUp 0.3s both ease-in;
-  -webkit-animation:fadeInUp 0.3s both ease-in; 
-  -moz-animation:fadeInUp 0.5s both ease-in; 
-  -o-animation:fadeInUp 0.5s both ease-in;
+  animation:fadeIn 0.5s both ease-in;
+  -webkit-animation:fadeIn 0.5s both ease-in; 
+  -moz-animation:fadeIn 0.5s both ease-in; 
+  -o-animation:fadeIn 0.5s both ease-in;
 }
 
 .show{
@@ -694,6 +857,24 @@ hr{
   -moz-transition: opacity 1s ease;
 }
 
+.overlay p{
+  margin-bottom: 200px;
+}
+
+
+
+.fa-external-link{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin-right:10px;
+  margin-bottom:10px;
+  color: #fff;
+}
+
+.fa-external-link:hover{
+  color:#1abc9c;
+}
 
 /************************ TRANSITIONS/ TRANSLATIONS ************************/ 
 
@@ -725,23 +906,23 @@ hr{
 
 /* Responsive: Portrait tablets and up */
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   .container {
-    width: 750px;
+    width: 768px;
   }
 }
-@media (min-width: 992px) {
+@media only screen and (min-width: 992px) {
   .container {
-    width: 970px;
+    width: 992px;
   }
 }
-@media (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   .container {
-    width: 1170px;
+    width: 1200px;
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 900px) {
   #navList li{
     float:left;
   }
@@ -767,10 +948,12 @@ hr{
     width: 50%;
   }
   
+}
+
+@media only screen and (max-width: 900px){
   #navList{
     display:none;
   }
-
   #nav-icon{
     display:block;
   }
@@ -804,6 +987,7 @@ hr{
   .sectionHeader{
     font-size:60px;
   }
+
   #hero h2{
     font-size:20px;
   }
@@ -815,6 +999,14 @@ hr{
     clear:both;
     line-height: 100px;
   }
+
+  .projectCols p{
+    font-size: 15px;
+  }
+
+  .findingsText{
+    clear:both;
+  }
 }
 
 @media only screen and (max-height: 700px){
@@ -824,7 +1016,7 @@ hr{
 }
 
 @media only screen and (max-height: 500px){
-  #scrollDownButton{
+  #scrollDownButton, #scrollDownText{
     display:none;
   }
 

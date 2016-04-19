@@ -1,6 +1,9 @@
 {
 	"name": "personal-site",
 	"main": "server.js",
+	"engines": {
+		"npm": "2.1.x"
+	},
 	"dependencies":{
 		"express": "~4.5.1"
 	}

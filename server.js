@@ -4,7 +4,7 @@ var app            = express();
 
 
 // set our port
-var port = process.env.PORT || 9000; 
+var port = process.env.PORT || 8080; 
 
 // connect to our mongoDB database 
 // (uncomment after you enter in your own credentials in config/db.js)
